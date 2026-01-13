@@ -1,0 +1,37 @@
+
+GUÍA DE PROYECTO 1
+
+Este programa tiene como objetivo comparar dos versiones de modelos de Tekla para verificar 
+si en ellos existe cambios como piezas eliminadas, partes cambiadas tanto en geometría como en numeración de las mismas, cambios de marca, etc.
+
+- Los pasos están descritos en el video contenido en la carpeta
+
+Contenido de los resultados:
+- Reporte 1: Es un reporte completo que muestra cambios en dimensiones, pesos o materiales de las partes, cambios de marcas. 
+       NOTA: Si en los resultados hay partes que aparecen dos veces, es debido a que existió cambios en el que la pieza se eliminó y se creó nuevamente pero se resuperó la marca
+
+- Reporte 2: Es un reporte que muestra cambios en las cantidades de las partes, suele verse enfrentados (Marca anterior en color azul siendo la de la primera comparación o base de datos 1 
+             y marca actual en color naranja siendo la base de datos 2 y aquellas que salen en la columna naranja solas sin su contraparte es debido a que son partes nuevas.
+
+- Reporte 3: Es un resumen que muestra los cambios por marca de ensamblaje en cantidades de partes o tambien si como conjunto fueron eliminadas (cantidades de partes que pertenecen a ese conjunto)
+
+- Reporte 4: Es un reporte ampliado del reporte 3 en el que muestra por ejemplo, si X conjunto tiene alguna parte eliminada, este reporte muestra todas sus partes y la que fue eliminada 
+             con la palabra "ELIMINADA" en la columna de status 
+
+PASOS:
+
+Paso 1: buscar en la ruta el excel y abrir 
+\\ADIPSA-SERVER\plantillas\MACROS\PROYECTO 1 - Proyecto viejo vs nuevo
+        NOTA: este paso puede demorar al momento de abrir el documento mientras cargan los ajustes del excel
+
+Paso 2: Llenar la infomacion de datos del proyecto en la primera hoja.
+
+Paso 3: Insertar en la pestaña de datos del proyecto los archivos en los botones "insertar las bases de datos 1 y 2"
+      - Base de datos 1: Proyecto base o primera entrega antes de comparación (version vieja)
+      - Base de datos 2: Segunda entrega o proyecto actual (version nueva)
+        NOTA:Para esto asegurarse de utilizar el reporte (400   ADIPSA-PowerFab_Part_v4) 
+
+Paso 4: Generar Reportes en orden
+        NOTA: Tener cuidado de esperar a que los reportes 1,2,3,4 sean generados antes de dar otro click para evitar que el programa se congele
+
+Para imprimir reportes en las ventanas de color amarillo, click en Ctrl + P
